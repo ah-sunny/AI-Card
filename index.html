@@ -9,8 +9,39 @@
     <!-- tailwine & Daisy Ui -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.11.1/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- custom style -->
+    <style>
+        .cardGrayPart {
+            display: flex;
+            gap: 8px;
+            justify-content: center;
+            background-color: #d8d7d7c5;
+            padding-top: 13px;
+            padding-bottom: 13px;
+            text-align: center;
+        }
 
+        .cardWhitePart {
+            display: flex;
+            gap: 8px;
+            justify-content: center;
+            padding-top: 13px;
+            padding-bottom: 13px;
+            text-align: center;
+        }
+
+        .centeredCard {
+            position: absolute;
+            left: 50%;
+            bottom: 4%;
+            transform: translate(-50%, 0);
+        }
+    </style>
 </head>
 <!-- class="bg-neutral text-white" -->
 
@@ -66,7 +97,173 @@
         </nav>
     </header>
 
-    <main>
+    <main class=" ">
+
+        <section class=" bg-[#e8e8956f] ">
+            <div class="container mx-auto flex flex-col-reverse lg:flex-row justify-center gap-9 pb-10 pt-10">
+                <div class="w-full lg:w-[50%] p-4 lg:p-0 pb-5">
+                    <img class="h-14 lg:h-24 mx-auto" src="./image/logo.png" alt="">
+                    <h1 class="font-bold text-xl pb-2"> AI CARD rating system excels in implementing the following key
+                        points:</h1>
+                    <div class="pl-4">
+                        <ol class="list-decimal">
+                            <li>Unmistakable accuracy: Even the most reliable grading companies can make mistakes, but
+                                our
+                                AI
+                                algorithms have the ability to detect any counterfeit or manipulated information.</li>
+                            <li>Enhanced scrutiny: With AI-powered technology, inconsistencies, suspicious patterns, or
+                                human
+                                errors in grading can be easily identified, ensuring a fair and precise assessment.</li>
+                            <li>Empowered decision-making: By leveraging AI, businesses and consumers can make more
+                                informed
+                                decisions based on trustworthy and objective ratings.</li>
+                            <li>Reliable and secure analysis: AI Digital Review provides a robust and dependable method
+                                for
+                                analyzing graded cards, offering peace of mind to both sellers and collectors.</li>
+                            <li>Authenticity verification: Our system incorporates serial numbers to guarantee the
+                                verification of each card's authenticity, giving users confidence in the integrity of
+                                the
+                                grading process.</li>
+                        </ol>
+                    </div>
+
+                </div>
+
+
+                <div class="w-full lg:w-[50%]"><img class="mx-auto h-[200px] lg:h-[450px]" src="./image/hero-image-zero6.png" alt=""></div>
+            </div>
+        </section>
+
+        <!-- price section -->
+
+        <section class="container mx-auto my-16 rounded-3xl bg-[#e9e6e6b1] p-2 lf:p-10">
+
+            <h1 class="mt-7 text-xl lg:text-3xl font-bold mx-auto text-center">SUBMIT YOUR TRADING CARDS NOW</h1>
+            <p class="text-sm lg:text-base font-medium mx-auto text-center">SELECT THE REQUIRED GRADING SERVICE YOU REQUIRE BELOW.
+            </p>
+
+            <div class="mt-5 h-auto lg:h-[1100px] w-full lg:w-[80%] mx-auto flex flex-col lg:flex-row justify-center items-center gap-7 lg:gap-0  ">
+
+
+                <!-- bronze -->
+                <div class="h-fit w-full lg:w-[30%] rounded-2xl lg:rounded-none lg:rounded-l-2xl  shadow-xl bg-base-100">
+                    <img class="rounded-2xl h-56" src="./image/bronze.png" alt="">
+                    <div class="bg-[#CD7F32] text-center text-white p-7">
+                        <h1 class="font-semibold text-3xl lg:text-5xl uppercase">BRONZE</h1>
+                        <P class="text-xs">MGC GRADING SERVICE</P>
+                    </div>
+
+                    <div class="my-5 text-sm ">
+                        <p class="cardGrayPart  ">
+                            <span><i class="fa-solid fa-check text-green-600"></i></span>
+                            2-8 WEEK GRADING SERVICE
+                        </p>
+                        <p class="cardWhitePart">
+                            <span><i class="fa-solid fa-check text-green-600"></i></span>
+                            A QUALIFIED MGC GRADING <br> EXECUTIVE WILL <br> AUTHENTICATE YOUR CARDS
+                        </p>
+                        <p class="cardGrayPart">
+                            <span><i class="fa-solid fa-check text-green-600"></i></span>
+                            CARDS ENCAPSULATED <br> USING ULTRA-SONIC <br>TAMPER PROOF SEALED <br> CASES
+                        </p>
+                        <p class="cardWhitePart">
+                            <span><i class="fa-solid fa-check text-green-600"></i></span>
+                            TRADING CARD INFORMATION <br>REGISTERED ON MGC <br> DATABASE
+                        </p>
+                        <p class="cardGrayPart">
+                            <span><i class="fa-solid fa-check text-green-600"></i></span>
+                            UK TRACKED & SIGNED <br>POSTAGE FOR RETURNS ON <br>ALL GRADED CARDS
+                        </p>
+                    </div>
+                    <div class="text-center mx-auto mb-7">
+                        <h1><i class="fa-solid fa-sterling-sign"></i> <span class="text-4xl font-semibold">12.99 per
+                                card</span></h1>
+                        <p class="text-xs ">CURRENT TIME FRAME - On Track </p>
+                        <button class="mt-5 w-[80%] btn text-white bg-green-600 ">SELECT SERVICE</button>
+                    </div>
+                </div>
+                <!-- silbar -->
+                <div class="w-full lg:w-[30%]  flex flex-col card rounded-2xl shadow-xl bg-base-100">
+                    <div class="h-12 hidden lg:block "></div>
+                    <div class=" ">
+                        <img class="rounded-2xl h-56 " src="./image/silbar.png" alt="">
+                    </div>
+                    <div class="bg-[#C0C0C0] text-center text-white p-7">
+                        <h1 class="font-semibold text-3xl lg:text-5xl uppercase">SILvAR</h1>
+                        <P class="text-xs">MGC GRADING SERVICE</P>
+                    </div>
+
+                    <div class="my-5 text-sm ">
+                        <p class="cardGrayPart  ">
+                            <span><i class="fa-solid fa-check text-green-600"></i></span>
+                            2-8 WEEK GRADING SERVICE
+                        </p>
+                        <p class="cardWhitePart">
+                            <span><i class="fa-solid fa-check text-green-600"></i></span>
+                            A QUALIFIED MGC GRADING <br> EXECUTIVE WILL <br> AUTHENTICATE YOUR CARDS
+                        </p>
+                        <p class="cardGrayPart">
+                            <span><i class="fa-solid fa-check text-green-600"></i></span>
+                            CARDS ENCAPSULATED <br> USING ULTRA-SONIC <br>TAMPER PROOF SEALED <br> CASES
+                        </p>
+                        <p class="cardWhitePart">
+                            <span><i class="fa-solid fa-check text-green-600"></i></span>
+                            TRADING CARD INFORMATION <br>REGISTERED ON MGC <br> DATABASE
+                        </p>
+                        <p class="cardGrayPart">
+                            <span><i class="fa-solid fa-check text-green-600"></i></span>
+                            UK TRACKED & SIGNED <br>POSTAGE FOR RETURNS ON <br>ALL GRADED CARDS
+                        </p>
+                    </div>
+                    <div class="text-center mx-auto mb-7">
+                        <h1><i class="fa-solid fa-sterling-sign"></i> <span class="text-4xl font-semibold">12.99 per
+                                card</span></h1>
+                        <p class="text-xs ">CURRENT TIME FRAME - On Track </p>
+                        <button class="mt-5 w-[80%] btn text-white bg-green-600 ">SELECT SERVICE</button>
+                    </div>
+                    <div class="h-12 hidden lg:block"></div>
+                </div>
+                
+                <!-- gold -->
+                <div class="h-fit w-full lg:w-[30%]  card  rounded-2xl lg:rounded-none lg:rounded-r-2xl shadow-xl bg-base-100">
+                    <img class="rounded-2xl h-56 " src="./image/gold.png" alt="">
+                    <div class="bg-[#FFD700] text-center text-white p-7">
+                        <h1 class="font-semibold text-3xl lg:text-5xl uppercase">gold</h1>
+                        <P class="text-xs">MGC GRADING SERVICE</P>
+                    </div>
+
+                    <div class="my-5 text-sm ">
+                        <p class="cardGrayPart  ">
+                            <span><i class="fa-solid fa-check text-green-600"></i></span>
+                            2-8 WEEK GRADING SERVICE
+                        </p>
+                        <p class="cardWhitePart">
+                            <span><i class="fa-solid fa-check text-green-600"></i></span>
+                            A QUALIFIED MGC GRADING <br> EXECUTIVE WILL <br> AUTHENTICATE YOUR CARDS
+                        </p>
+                        <p class="cardGrayPart">
+                            <span><i class="fa-solid fa-check text-green-600"></i></span>
+                            CARDS ENCAPSULATED <br> USING ULTRA-SONIC <br>TAMPER PROOF SEALED <br> CASES
+                        </p>
+                        <p class="cardWhitePart">
+                            <span><i class="fa-solid fa-check text-green-600"></i></span>
+                            TRADING CARD INFORMATION <br>REGISTERED ON MGC <br> DATABASE
+                        </p>
+                        <p class="cardGrayPart">
+                            <span><i class="fa-solid fa-check text-green-600"></i></span>
+                            UK TRACKED & SIGNED <br>POSTAGE FOR RETURNS ON <br>ALL GRADED CARDS
+                        </p>
+                    </div>
+                    <div class="text-center mx-auto mb-7">
+                        <h1><i class="fa-solid fa-sterling-sign"></i> <span class="text-4xl font-semibold">12.99 per
+                                card</span></h1>
+                        <p class="text-xs ">CURRENT TIME FRAME - On Track </p>
+                        <button class="mt-5 w-[80%] btn text-white bg-green-600 ">SELECT SERVICE</button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
 
     </main>
 

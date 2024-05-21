@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI CARD</title>
+    <title>AiCard</title>
 
     <!-- tailwine & Daisy Ui -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.11.1/dist/full.min.css" rel="stylesheet" type="text/css" />
@@ -13,6 +13,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
+    <!--  -->
+    <link rel="stylesheet" href="./style/style.css">
 
     <!-- custom style -->
     <style>
@@ -41,11 +47,23 @@
             bottom: 4%;
             transform: translate(-50%, 0);
         }
+
+        .banner_image {
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)),
+                url('./image/attachment_1.jpeg');
+        }
+
+        .font-Didact {
+            font-family: "Didact Gothic", sans-serif;
+        }
+        .font-vector{
+            font-family: 'HKGrotesk', sans-serif;
+        }
     </style>
 </head>
 
 
-<body>
+<body class="font-Didact">
     <header class="bg-[#000000ab] text-white">
         <nav class="container mx-auto ">
             <div class="navbar">
@@ -96,45 +114,56 @@
 
     <main class=" ">
         <!-- banner -->
-        <section class=" bg-[#e8e8956f] ">
-            <div class="container mx-auto flex flex-col-reverse lg:flex-row justify-center gap-9 pb-10 pt-10">
-                <div class="w-full lg:w-[50%] p-4 lg:p-0 pb-5">
-                    <img class="h-14 lg:h-24 mx-auto" src="./image/logo.png" alt="">
-                    <h1 class="font-bold text-xl pb-2"> AI CARD rating system excels in implementing the following key
-                        points:</h1>
-                    <div class="pl-4">
-                        <ol class="list-decimal">
-                            <li>Unmistakable accuracy: Even the most reliable grading companies can make mistakes, but
-                                our
-                                AI
-                                algorithms have the ability to detect any counterfeit or manipulated information.</li>
-                            <li>Enhanced scrutiny: With AI-powered technology, inconsistencies, suspicious patterns, or
-                                human
-                                errors in grading can be easily identified, ensuring a fair and precise assessment.</li>
-                            <li>Empowered decision-making: By leveraging AI, businesses and consumers can make more
-                                informed
-                                decisions based on trustworthy and objective ratings.</li>
-                            <li>Reliable and secure analysis: AI Digital Review provides a robust and dependable method
-                                for
-                                analyzing graded cards, offering peace of mind to both sellers and collectors.</li>
-                            <li>Authenticity verification: Our system incorporates serial numbers to guarantee the
-                                verification of each card's authenticity, giving users confidence in the integrity of
-                                the
-                                grading process.</li>
-                        </ol>
+        <section class="  ">
+            <div class="banner_image bg-cover text-white">
+
+                <div class="container mx-auto flex flex-col-reverse lg:flex-row justify-center  gap-9 pb-10 pt-10">
+                    <div class="w-full lg:w-[60%] p-4 lg:p-0 pb-5">
+                        <img class="h-14 lg:h-24 " src="./image/logo.png" alt="">
+                        <h1 class="font-vector font-bold text-xl lg:text-4xl pb-7"> AiCard rating system excels in implementing the following
+                            key
+                            points:</h1>
+                        <div class="pl-4 font-Didact font-medium w-[90%]">
+                            <ol class="list-decimal space-y-3">
+                                <li>Unmistakable accuracy: Even the most reliable grading companies can make mistakes,
+                                    but
+                                    our
+                                    AI
+                                    algorithms have the ability to detect any counterfeit or manipulated information.
+                                </li>
+                                <li>Enhanced scrutiny: With AI-powered technology, inconsistencies, suspicious patterns,
+                                    or
+                                    human
+                                    errors in grading can be easily identified, ensuring a fair and precise assessment.
+                                </li>
+                                <li>Empowered decision-making: By leveraging AI, businesses and consumers can make more
+                                    informed
+                                    decisions based on trustworthy and objective ratings.</li>
+                                <li>Reliable and secure analysis: AI Digital Review provides a robust and dependable
+                                    method
+                                    for
+                                    analyzing graded cards, offering peace of mind to both sellers and collectors.</li>
+                                <li>Authenticity verification: Our system incorporates serial numbers to guarantee the
+                                    verification of each card's authenticity, giving users confidence in the integrity
+                                    of
+                                    the
+                                    grading process.</li>
+                            </ol>
+                        </div>
+
                     </div>
 
+
+                    <div class="w-full lg:w-[40%]"><img class="mx-auto h-[200px] lg:h-[450px]"
+                            src="./image/hero-image-zero6.png" alt="">
+                    </div>
                 </div>
-
-
-                <div class="w-full lg:w-[50%]"><img class="mx-auto h-[200px] lg:h-[450px]"
-                        src="./image/hero-image-zero6.png" alt=""></div>
             </div>
         </section>
         <!-- price section -->
         <section class="container mx-auto my-16 rounded-3xl bg-[#e9e6e6b1] p-2 lf:p-10">
 
-            <h1 class="mt-7 text-xl lg:text-3xl font-bold mx-auto text-center">SUBMIT YOUR TRADING CARDS NOW</h1>
+            <h1 class="font-vector mt-7 text-xl lg:text-4xl font-bold mx-auto text-center ">SUBMIT YOUR TRADING CARDS NOW</h1>
             <p class="text-sm lg:text-base font-medium mx-auto text-center">SELECT THE REQUIRED GRADING SERVICE YOU
                 REQUIRE BELOW.
             </p>
@@ -148,8 +177,8 @@
                     class="h-fit w-full lg:w-[30%] rounded-2xl lg:rounded-none lg:rounded-l-2xl  shadow-xl bg-base-100">
                     <img class="rounded-2xl h-56" src="./image/bronze.png" alt="">
                     <div class="bg-[#CD7F32] text-center text-white p-7">
-                        <h1 class="font-semibold text-3xl lg:text-5xl uppercase">BRONZE</h1>
-                        <P class="text-xs">MGC GRADING SERVICE</P>
+                        <h1 class="font-vector font-semibold text-3xl lg:text-5xl uppercase">BRONZE</h1>
+                        <P class="text-xs">AiCard GRADING SERVICE</P>
                     </div>
 
                     <div class="my-5 text-sm ">
@@ -188,8 +217,8 @@
                         <img class="rounded-2xl h-56 " src="./image/silbar.png" alt="">
                     </div>
                     <div class="bg-[#C0C0C0] text-center text-white p-7">
-                        <h1 class="font-semibold text-3xl lg:text-5xl uppercase">SILvAR</h1>
-                        <P class="text-xs">MGC GRADING SERVICE</P>
+                        <h1 class="font-vector font-semibold text-3xl lg:text-5xl uppercase">SILVER</h1>
+                        <P class="text-xs">AiCard GRADING SERVICE</P>
                     </div>
 
                     <div class="my-5 text-sm ">
@@ -215,7 +244,7 @@
                         </p>
                     </div>
                     <div class="text-center mx-auto mb-7">
-                        <h1><i class="fa-solid fa-sterling-sign"></i> <span class="text-4xl font-semibold">12.99 per
+                        <h1><i class="fa-solid fa-sterling-sign"></i> <span class="text-4xl font-semibold">29.99 per
                                 card</span></h1>
                         <p class="text-xs ">CURRENT TIME FRAME - On Track </p>
                         <button class="mt-5 w-[80%] btn text-white bg-green-600 ">SELECT SERVICE</button>
@@ -228,8 +257,8 @@
                     class="h-fit w-full lg:w-[30%]  card  rounded-2xl lg:rounded-none lg:rounded-r-2xl shadow-xl bg-base-100">
                     <img class="rounded-2xl h-56 " src="./image/gold.png" alt="">
                     <div class="bg-[#FFD700] text-center text-white p-7">
-                        <h1 class="font-semibold text-3xl lg:text-5xl uppercase">gold</h1>
-                        <P class="text-xs">MGC GRADING SERVICE</P>
+                        <h1 class="font-vector font-semibold text-3xl lg:text-5xl uppercase">gold</h1>
+                        <P class="text-xs">AiCard GRADING SERVICE</P>
                     </div>
 
                     <div class="my-5 text-sm ">
@@ -255,7 +284,7 @@
                         </p>
                     </div>
                     <div class="text-center mx-auto mb-7">
-                        <h1><i class="fa-solid fa-sterling-sign"></i> <span class="text-4xl font-semibold">12.99 per
+                        <h1><i class="fa-solid fa-sterling-sign"></i> <span class="text-4xl font-semibold">45.99 per
                                 card</span></h1>
                         <p class="text-xs ">CURRENT TIME FRAME - On Track </p>
                         <button class="mt-5 w-[80%] btn text-white bg-green-600 ">SELECT SERVICE</button>
@@ -269,8 +298,8 @@
 
             <div class="w-full lg:w-[40%] mx-auto p-3 ">
                 <div class="text-left mx-auto mb-3 lg:mb-12">
-                    <h1 class="text-3xl lg:text-5xl font-bold mb-4">Sign up to save.</h1>
-                    <p class="font-medium text-sm lg:text-xl text-left">Receive discount coupons and up-to-date pricing
+                    <h1 class="font-vector text-3xl lg:text-6xl font-bold mb-4">Sign up to save.</h1>
+                    <p class="font-medium text-sm lg:text-lg text-left">Receive discount coupons and up-to-date pricing
                         on cards.</p>
 
                 </div>
@@ -299,7 +328,7 @@
         <aside class="text-left text-sm font-normal space-y-1 ">
             <h6 class="text-2xl lg:text-5xl font-bold ">AiCard</h6>
             <p class="link text-[#556be8ed]">86-90 Paul Street <br> London <br> EC2A4NE</p>
-            <p>Contact Number : 442046388804 </p>
+            <p>Contact Number : +442046388804 </p>
 
         </aside>
         <nav>

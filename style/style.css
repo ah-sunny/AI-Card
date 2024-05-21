@@ -1,10 +1,10 @@
-font-face {
+@font-face {
 
 
     font-family: 'vector';
-    src: url('../font/VECTOR_FONT/VECTOR_BOLD_TTF.ttf') format('woff2'),
-        /* url('../font/hk-grotesk/HKGrotesk-Light.otf') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    */
+    src: url('../font/VECTOR_FONT/WebFont/vector_bold_ttf-webfont.woff2') format('woff2'),
+        url('../font/VECTOR_FONT/WebFont/vector_bold_ttf-webfont.woff') format('woff');
+    /* font-weight: normal;
+    font-style: normal; */
+
 }
